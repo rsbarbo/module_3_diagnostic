@@ -12,7 +12,7 @@ class StationService
   def connection
     Faraday.new(:url => 'http://developer.nrel.gov//api/alt-fuel-stations/v1/nearest.json') do |faraday|
       faraday.adapter  Faraday.default_adapter
-      faraday.params[:access_token] = token
+      faraday.params[:api_key] = token
     end
   end
 
