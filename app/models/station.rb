@@ -9,9 +9,11 @@ class Station
     service.get_all_stations
   end
 
-  def fuel_stations
-    binding.pry
-    find_all_stations
+  def fuel_stations_names
+    find_all_stations[:fuel_stations].map do |stations|
+      binding.pry
+      stations
+    end
   end
 
 end
