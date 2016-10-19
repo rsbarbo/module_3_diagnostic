@@ -1,5 +1,5 @@
 class Station
   def initialize(params)
-    @location = params[:q]
+    @service ||= Service.new(params)
   end
 end
