@@ -2,6 +2,7 @@ class Station
   attr_reader :service
 
   def initialize(params)
+    binding.pry
     @service ||= StationService.new(params, token: ENV['user_token'])
   end
 
