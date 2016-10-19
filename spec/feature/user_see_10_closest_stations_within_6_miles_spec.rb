@@ -3,8 +3,6 @@ require 'rails_helper'
 RSpec.feature "User can see 10 closest stations within 6 miles" do
   describe "when user gives a zip code" do
     it "expect to see 10 closest stations within 6 miles" do
-
-      data_mock
       # As a user
       # When I visit "/"
       visit '/'
