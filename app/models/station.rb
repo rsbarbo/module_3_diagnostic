@@ -11,8 +11,7 @@ class Station
 
   def fuel_stations_names
     find_all_stations[:fuel_stations].map do |stations|
-      binding.pry
-      stations
+      stations[:station_name]
     end
   end
 

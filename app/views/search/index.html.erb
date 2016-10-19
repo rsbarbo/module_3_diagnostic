@@ -1,5 +1,8 @@
-<center>
+<center> <h1>
   Result
-</center>
+</h1></center>
 
-<%= @stations.fuel_stations_names %>
+<h3> Station Names</h3>
+<% @stations.fuel_stations_names.each do |name|  %>
+<%= name  %>
+<% end %>
